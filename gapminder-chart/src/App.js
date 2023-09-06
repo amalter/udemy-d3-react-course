@@ -6,8 +6,8 @@ import { scaleOrdinal, schemeTableau10 } from "d3";
 import { useState } from "react";
 import Legend from "./Legend";
 
-const width = 960;
-const height = 500;
+const width = 860;
+const height = 400;
 
 function App() {
   const [year, setYear] = useState({ x: 1957 });
@@ -24,7 +24,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1 className="header">Gapminder Chart</h1>
+      <h1 className="header">Life Expectancy</h1>
       <div className="slider">
         <p>{year.x}</p>
         <Slider
